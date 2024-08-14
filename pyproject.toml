@@ -20,10 +20,15 @@ opensearch-py = "^2.3.2"
 tqdm = "^4.66.1"
 psycopg = {extras = ["binary"], version = "^3.1.17"}
 pgvector = "^0.2.4"
+matplotlib = {version = "^3.9.2", python = ">=3.9,<3.12"}
+seaborn = "^0.13.2"
 
 [tool.poetry.dev-dependencies]
 pre-commit = "^2.20.0"
 pytest = "^7.1"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
