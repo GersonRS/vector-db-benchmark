@@ -1,0 +1,874 @@
+[
+  {
+    "engine_name": "elasticsearch",
+    "setup_name": "elasticsearch-m-32-ef-256",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "0",
+    "upload_time": 259.2367609920002,
+    "total_upload_time": 2165.052617661,
+    "p95_time": 0.005510165600298933,
+    "rps": 254.07691143226745,
+    "parallel": 1,
+    "p99_time": 0.006970228909376602,
+    "mean_time": 0.003861640632495437,
+    "mean_precisions": 0.81542,
+    "engine_params": {
+      "index_options": {
+        "m": 32,
+        "ef_construction": 256
+      },
+      "num_candidates": 128
+    }
+  },
+  {
+    "engine_name": "elasticsearch",
+    "setup_name": "elasticsearch-m-32-ef-256",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "1",
+    "upload_time": 259.2367609920002,
+    "total_upload_time": 2165.052617661,
+    "p95_time": 0.008276425350231875,
+    "rps": 155.97585532566322,
+    "parallel": 1,
+    "p99_time": 0.009426178449666624,
+    "mean_time": 0.006335376113095117,
+    "mean_precisions": 0.929642,
+    "engine_params": {
+      "index_options": {
+        "m": 32,
+        "ef_construction": 256
+      },
+      "num_candidates": 512
+    }
+  },
+  {
+    "engine_name": "elasticsearch",
+    "setup_name": "elasticsearch-m-32-ef-512",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "0",
+    "upload_time": 383.68812268200054,
+    "total_upload_time": 4334.849997906,
+    "p95_time": 0.00406566020074024,
+    "rps": 306.8687121506705,
+    "parallel": 1,
+    "p99_time": 0.004691018479170452,
+    "mean_time": 0.0031962680460030242,
+    "mean_precisions": 0.830292,
+    "engine_params": {
+      "index_options": {
+        "m": 32,
+        "ef_construction": 512
+      },
+      "num_candidates": 128
+    }
+  },
+  {
+    "engine_name": "elasticsearch",
+    "setup_name": "elasticsearch-m-32-ef-512",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "1",
+    "upload_time": 383.68812268200054,
+    "total_upload_time": 4334.849997906,
+    "p95_time": 0.008571281649437879,
+    "rps": 146.79064142692602,
+    "parallel": 1,
+    "p99_time": 0.009800346039883154,
+    "mean_time": 0.006737115299407196,
+    "mean_precisions": 0.9425769999999999,
+    "engine_params": {
+      "index_options": {
+        "m": 32,
+        "ef_construction": 512
+      },
+      "num_candidates": 512
+    }
+  },
+  {
+    "engine_name": "elasticsearch",
+    "setup_name": "elasticsearch-m-64-ef-256",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "0",
+    "upload_time": 281.16547881899896,
+    "total_upload_time": 2809.3173359230004,
+    "p95_time": 0.004679038850918004,
+    "rps": 278.78551371754764,
+    "parallel": 1,
+    "p99_time": 0.005340974803075369,
+    "mean_time": 0.003524280027212808,
+    "mean_precisions": 0.848125,
+    "engine_params": {
+      "index_options": {
+        "m": 64,
+        "ef_construction": 256
+      },
+      "num_candidates": 128
+    }
+  },
+  {
+    "engine_name": "elasticsearch",
+    "setup_name": "elasticsearch-m-64-ef-256",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "1",
+    "upload_time": 281.16547881899896,
+    "total_upload_time": 2809.3173359230004,
+    "p95_time": 0.010113927100792352,
+    "rps": 130.1425320304112,
+    "parallel": 1,
+    "p99_time": 0.011742814649369394,
+    "mean_time": 0.007604577461806912,
+    "mean_precisions": 0.9541369999999999,
+    "engine_params": {
+      "index_options": {
+        "m": 64,
+        "ef_construction": 256
+      },
+      "num_candidates": 512
+    }
+  },
+  {
+    "engine_name": "elasticsearch",
+    "setup_name": "elasticsearch-m-64-ef-512",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "0",
+    "upload_time": 999.5082836330002,
+    "total_upload_time": 6322.967923452001,
+    "p95_time": 0.005513090649219521,
+    "rps": 234.06764529587377,
+    "parallel": 1,
+    "p99_time": 0.006269808299657597,
+    "mean_time": 0.004206448521004131,
+    "mean_precisions": 0.8745720000000001,
+    "engine_params": {
+      "index_options": {
+        "m": 64,
+        "ef_construction": 512
+      },
+      "num_candidates": 128
+    }
+  },
+  {
+    "engine_name": "elasticsearch",
+    "setup_name": "elasticsearch-m-64-ef-512",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "1",
+    "upload_time": 999.5082836330002,
+    "total_upload_time": 6322.967923452001,
+    "p95_time": 0.011610219798421894,
+    "rps": 112.71082140733346,
+    "parallel": 1,
+    "p99_time": 0.013399762911540167,
+    "mean_time": 0.008792121538021093,
+    "mean_precisions": 0.970931,
+    "engine_params": {
+      "index_options": {
+        "m": 64,
+        "ef_construction": 512
+      },
+      "num_candidates": 512
+    }
+  },
+  {
+    "engine_name": "pgvector",
+    "setup_name": "pgvector-m-32-ef-256",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "0",
+    "upload_time": 13.43498271000135,
+    "total_upload_time": 935.5831619360033,
+    "p95_time": 0.0040607614497275785,
+    "rps": 333.26456411272983,
+    "parallel": 1,
+    "p99_time": 0.004758928143346566,
+    "mean_time": 0.002941932186687336,
+    "mean_precisions": 0.5816359999999999,
+    "engine_params": {
+      "hnsw_config": {
+        "m": 32,
+        "ef_construct": 256
+      },
+      "hnsw_ef": 64
+    }
+  },
+  {
+    "engine_name": "pgvector",
+    "setup_name": "pgvector-m-32-ef-256",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "1",
+    "upload_time": 13.43498271000135,
+    "total_upload_time": 935.5831619360033,
+    "p95_time": 0.02205573080027534,
+    "rps": 60.16794891166382,
+    "parallel": 1,
+    "p99_time": 0.023324622970612836,
+    "mean_time": 0.01650801736479043,
+    "mean_precisions": 0.943242,
+    "engine_params": {
+      "hnsw_config": {
+        "m": 32,
+        "ef_construct": 256
+      },
+      "hnsw_ef": 512
+    }
+  },
+  {
+    "engine_name": "pgvector",
+    "setup_name": "pgvector-m-32-ef-512",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "0",
+    "upload_time": 14.02430341699801,
+    "total_upload_time": 1737.5424360069956,
+    "p95_time": 0.004108284797985107,
+    "rps": 322.50779794253964,
+    "parallel": 1,
+    "p99_time": 0.004743992589064874,
+    "mean_time": 0.0030461727415829953,
+    "mean_precisions": 0.581009,
+    "engine_params": {
+      "hnsw_config": {
+        "m": 32,
+        "ef_construct": 512
+      },
+      "hnsw_ef": 64
+    }
+  },
+  {
+    "engine_name": "pgvector",
+    "setup_name": "pgvector-m-32-ef-512",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "1",
+    "upload_time": 14.02430341699801,
+    "total_upload_time": 1737.5424360069956,
+    "p95_time": 0.022627237700726253,
+    "rps": 57.30094489195143,
+    "parallel": 1,
+    "p99_time": 0.023839387368861934,
+    "mean_time": 0.017337200091939304,
+    "mean_precisions": 0.9497129999999999,
+    "engine_params": {
+      "hnsw_config": {
+        "m": 32,
+        "ef_construct": 512
+      },
+      "hnsw_ef": 512
+    }
+  },
+  {
+    "engine_name": "pgvector",
+    "setup_name": "pgvector-m-64-ef-256",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "0",
+    "upload_time": 13.66972124199674,
+    "total_upload_time": 1878.880217136997,
+    "p95_time": 0.006821172447234857,
+    "rps": 202.65531682734775,
+    "parallel": 1,
+    "p99_time": 0.007811771035849236,
+    "mean_time": 0.0048736472488722935,
+    "mean_precisions": 0.6139049999999999,
+    "engine_params": {
+      "hnsw_config": {
+        "m": 64,
+        "ef_construct": 256
+      },
+      "hnsw_ef": 64
+    }
+  },
+  {
+    "engine_name": "pgvector",
+    "setup_name": "pgvector-m-64-ef-256",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "1",
+    "upload_time": 13.66972124199674,
+    "total_upload_time": 1878.880217136997,
+    "p95_time": 0.0397423443970183,
+    "rps": 35.2213543629505,
+    "parallel": 1,
+    "p99_time": 0.04229338863675368,
+    "mean_time": 0.028277210163674318,
+    "mean_precisions": 0.9740790000000001,
+    "engine_params": {
+      "hnsw_config": {
+        "m": 64,
+        "ef_construct": 256
+      },
+      "hnsw_ef": 512
+    }
+  },
+  {
+    "engine_name": "pgvector",
+    "setup_name": "pgvector-m-64-ef-512",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "0",
+    "upload_time": 13.772812246003014,
+    "total_upload_time": 3149.8204901260033,
+    "p95_time": 0.006922911596120682,
+    "rps": 196.37511632295534,
+    "parallel": 1,
+    "p99_time": 0.00786469534781645,
+    "mean_time": 0.00502161629550028,
+    "mean_precisions": 0.616767,
+    "engine_params": {
+      "hnsw_config": {
+        "m": 64,
+        "ef_construct": 512
+      },
+      "hnsw_ef": 64
+    }
+  },
+  {
+    "engine_name": "pgvector",
+    "setup_name": "pgvector-m-64-ef-512",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "1",
+    "upload_time": 13.772812246003014,
+    "total_upload_time": 3149.8204901260033,
+    "p95_time": 0.04041864154787618,
+    "rps": 34.1398853317681,
+    "parallel": 1,
+    "p99_time": 0.04288878386054421,
+    "mean_time": 0.029177487131385713,
+    "mean_precisions": 0.9797990000000002,
+    "engine_params": {
+      "hnsw_config": {
+        "m": 64,
+        "ef_construct": 512
+      },
+      "hnsw_ef": 512
+    }
+  },
+  {
+    "engine_name": "qdrant",
+    "setup_name": "qdrant-m-32-ef-256",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "0",
+    "upload_time": 22.014017472996784,
+    "total_upload_time": 307.3713316989961,
+    "p95_time": 0.003025945002082153,
+    "rps": 386.3977056631391,
+    "parallel": 1,
+    "p99_time": 0.003354092609079089,
+    "mean_time": 0.0024992955187146436,
+    "mean_precisions": 0.8729960000000001,
+    "engine_params": {
+      "optimizers_config": {
+        "memmap_threshold": 10000000
+      },
+      "hnsw_config": {
+        "m": 32,
+        "ef_construct": 256
+      },
+      "hnsw_ef": 64
+    }
+  },
+  {
+    "engine_name": "qdrant",
+    "setup_name": "qdrant-m-32-ef-256",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "1",
+    "upload_time": 22.014017472996784,
+    "total_upload_time": 307.3713316989961,
+    "p95_time": 0.007247181647835532,
+    "rps": 163.11489610312515,
+    "parallel": 1,
+    "p99_time": 0.007717933649109911,
+    "mean_time": 0.00602942890139384,
+    "mean_precisions": 0.992242,
+    "engine_params": {
+      "optimizers_config": {
+        "memmap_threshold": 10000000
+      },
+      "hnsw_config": {
+        "m": 32,
+        "ef_construct": 256
+      },
+      "hnsw_ef": 512
+    }
+  },
+  {
+    "engine_name": "qdrant",
+    "setup_name": "qdrant-m-32-ef-512",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "0",
+    "upload_time": 22.020964166993508,
+    "total_upload_time": 582.6267502909977,
+    "p95_time": 0.0031913783481286357,
+    "rps": 367.0504187861243,
+    "parallel": 1,
+    "p99_time": 0.003492973839165643,
+    "mean_time": 0.0026322471439831135,
+    "mean_precisions": 0.878705,
+    "engine_params": {
+      "optimizers_config": {
+        "memmap_threshold": 10000000
+      },
+      "hnsw_config": {
+        "m": 32,
+        "ef_construct": 512
+      },
+      "hnsw_ef": 64
+    }
+  },
+  {
+    "engine_name": "qdrant",
+    "setup_name": "qdrant-m-32-ef-512",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "1",
+    "upload_time": 22.020964166993508,
+    "total_upload_time": 582.6267502909977,
+    "p95_time": 0.007669465545404818,
+    "rps": 152.4901663213958,
+    "parallel": 1,
+    "p99_time": 0.008126314488472418,
+    "mean_time": 0.006449514625436132,
+    "mean_precisions": 0.994761,
+    "engine_params": {
+      "optimizers_config": {
+        "memmap_threshold": 10000000
+      },
+      "hnsw_config": {
+        "m": 32,
+        "ef_construct": 512
+      },
+      "hnsw_ef": 512
+    }
+  },
+  {
+    "engine_name": "qdrant",
+    "setup_name": "qdrant-m-64-ef-256",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "0",
+    "upload_time": 21.813324732000183,
+    "total_upload_time": 337.2039692759936,
+    "p95_time": 0.003305434653157135,
+    "rps": 351.28761617104067,
+    "parallel": 1,
+    "p99_time": 0.003686696479926468,
+    "mean_time": 0.0027542937449077727,
+    "mean_precisions": 0.9037210000000001,
+    "engine_params": {
+      "optimizers_config": {
+        "memmap_threshold": 10000000
+      },
+      "hnsw_config": {
+        "m": 64,
+        "ef_construct": 256
+      },
+      "hnsw_ef": 64
+    }
+  },
+  {
+    "engine_name": "qdrant",
+    "setup_name": "qdrant-m-64-ef-256",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "1",
+    "upload_time": 21.813324732000183,
+    "total_upload_time": 337.2039692759936,
+    "p95_time": 0.008746514649465098,
+    "rps": 138.7210212785989,
+    "parallel": 1,
+    "p99_time": 0.00919875757135742,
+    "mean_time": 0.007106355768429057,
+    "mean_precisions": 0.9960180000000001,
+    "engine_params": {
+      "optimizers_config": {
+        "memmap_threshold": 10000000
+      },
+      "hnsw_config": {
+        "m": 64,
+        "ef_construct": 256
+      },
+      "hnsw_ef": 512
+    }
+  },
+  {
+    "engine_name": "qdrant",
+    "setup_name": "qdrant-m-64-ef-512",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "0",
+    "upload_time": 22.193030128997634,
+    "total_upload_time": 647.909977958996,
+    "p95_time": 0.00345625389709312,
+    "rps": 331.87960095129716,
+    "parallel": 1,
+    "p99_time": 0.0038642246922245254,
+    "mean_time": 0.0029201463693432745,
+    "mean_precisions": 0.917141,
+    "engine_params": {
+      "optimizers_config": {
+        "memmap_threshold": 10000000
+      },
+      "hnsw_config": {
+        "m": 64,
+        "ef_construct": 512
+      },
+      "hnsw_ef": 64
+    }
+  },
+  {
+    "engine_name": "qdrant",
+    "setup_name": "qdrant-m-64-ef-512",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "1",
+    "upload_time": 22.193030128997634,
+    "total_upload_time": 647.909977958996,
+    "p95_time": 0.009751396903811837,
+    "rps": 123.93843309647886,
+    "parallel": 1,
+    "p99_time": 0.010197096658666851,
+    "mean_time": 0.007965230009021615,
+    "mean_precisions": 0.998237,
+    "engine_params": {
+      "optimizers_config": {
+        "memmap_threshold": 10000000
+      },
+      "hnsw_config": {
+        "m": 64,
+        "ef_construct": 512
+      },
+      "hnsw_ef": 512
+    }
+  },
+  {
+    "engine_name": "redis",
+    "setup_name": "redis-m-32-ef-256",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "0",
+    "upload_time": 1024.375903209002,
+    "total_upload_time": 1024.3759496269995,
+    "p95_time": 0.0017715060494083443,
+    "rps": 734.7251999360467,
+    "parallel": 1,
+    "p99_time": 0.002104847466835054,
+    "mean_time": 0.0013141534384958505,
+    "mean_precisions": 0.765863,
+    "engine_params": {
+      "hnsw_config": {
+        "M": 32,
+        "EF_CONSTRUCTION": 256
+      },
+      "EF": 64
+    }
+  },
+  {
+    "engine_name": "redis",
+    "setup_name": "redis-m-32-ef-256",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "1",
+    "upload_time": 1024.375903209002,
+    "total_upload_time": 1024.3759496269995,
+    "p95_time": 0.0034711549527855815,
+    "rps": 352.58569173625204,
+    "parallel": 1,
+    "p99_time": 0.004621401130571031,
+    "mean_time": 0.0027638448672179946,
+    "mean_precisions": 0.925242,
+    "engine_params": {
+      "hnsw_config": {
+        "M": 32,
+        "EF_CONSTRUCTION": 256
+      },
+      "EF": 512
+    }
+  },
+  {
+    "engine_name": "redis",
+    "setup_name": "redis-m-32-ef-512",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "0",
+    "upload_time": 1872.581662800003,
+    "total_upload_time": 1872.5817070720004,
+    "p95_time": 0.001888136150955688,
+    "rps": 720.2623412506205,
+    "parallel": 1,
+    "p99_time": 0.00222117226716364,
+    "mean_time": 0.001335665615151811,
+    "mean_precisions": 0.7724730000000002,
+    "engine_params": {
+      "hnsw_config": {
+        "M": 32,
+        "EF_CONSTRUCTION": 512
+      },
+      "EF": 64
+    }
+  },
+  {
+    "engine_name": "redis",
+    "setup_name": "redis-m-32-ef-512",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "1",
+    "upload_time": 1872.581662800003,
+    "total_upload_time": 1872.5817070720004,
+    "p95_time": 0.003554753299977164,
+    "rps": 343.5547189349265,
+    "parallel": 1,
+    "p99_time": 0.004618745154803038,
+    "mean_time": 0.0028354411822183465,
+    "mean_precisions": 0.933034,
+    "engine_params": {
+      "hnsw_config": {
+        "M": 32,
+        "EF_CONSTRUCTION": 512
+      },
+      "EF": 512
+    }
+  },
+  {
+    "engine_name": "redis",
+    "setup_name": "redis-m-64-ef-256",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "0",
+    "upload_time": 1282.9018980670007,
+    "total_upload_time": 1282.9019425290026,
+    "p95_time": 0.0019462888514681248,
+    "rps": 639.9008795790463,
+    "parallel": 1,
+    "p99_time": 0.0023101591303566257,
+    "mean_time": 0.0015128736069556909,
+    "mean_precisions": 0.81121,
+    "engine_params": {
+      "hnsw_config": {
+        "M": 64,
+        "EF_CONSTRUCTION": 256
+      },
+      "EF": 64
+    }
+  },
+  {
+    "engine_name": "redis",
+    "setup_name": "redis-m-64-ef-256",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "1",
+    "upload_time": 1282.9018980670007,
+    "total_upload_time": 1282.9019425290026,
+    "p95_time": 0.004274355799498152,
+    "rps": 299.2723027802088,
+    "parallel": 1,
+    "p99_time": 0.005508266431061203,
+    "mean_time": 0.003261784195711516,
+    "mean_precisions": 0.952518,
+    "engine_params": {
+      "hnsw_config": {
+        "M": 64,
+        "EF_CONSTRUCTION": 256
+      },
+      "EF": 512
+    }
+  },
+  {
+    "engine_name": "redis",
+    "setup_name": "redis-m-64-ef-512",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "0",
+    "upload_time": 2628.445094128001,
+    "total_upload_time": 2628.4451461360004,
+    "p95_time": 0.0021548693974182244,
+    "rps": 588.9029507484069,
+    "parallel": 1,
+    "p99_time": 0.0025773747958010066,
+    "mean_time": 0.0016442150663853682,
+    "mean_precisions": 0.829536,
+    "engine_params": {
+      "hnsw_config": {
+        "M": 64,
+        "EF_CONSTRUCTION": 512
+      },
+      "EF": 64
+    }
+  },
+  {
+    "engine_name": "redis",
+    "setup_name": "redis-m-64-ef-512",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "1",
+    "upload_time": 2628.445094128001,
+    "total_upload_time": 2628.4451461360004,
+    "p95_time": 0.0046535058463632595,
+    "rps": 269.7828193298352,
+    "parallel": 1,
+    "p99_time": 0.00598843905805552,
+    "mean_time": 0.0036246129415070756,
+    "mean_precisions": 0.9674320000000002,
+    "engine_params": {
+      "hnsw_config": {
+        "M": 64,
+        "EF_CONSTRUCTION": 512
+      },
+      "EF": 512
+    }
+  },
+  {
+    "engine_name": "weaviate",
+    "setup_name": "weaviate-m-32-ef-256",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "0",
+    "upload_time": 514.320834281003,
+    "total_upload_time": 514.3208749580008,
+    "p95_time": 0.003825035856061731,
+    "rps": 371.96463206807,
+    "parallel": 1,
+    "p99_time": 0.004511312848408125,
+    "mean_time": 0.002613203267746576,
+    "mean_precisions": 0.7656440000000001,
+    "engine_params": {
+      "batch_size": 1024,
+      "vectorIndexConfig": {
+        "efConstruction": 256,
+        "maxConnections": 32
+      },
+      "ef": 64
+    }
+  },
+  {
+    "engine_name": "weaviate",
+    "setup_name": "weaviate-m-32-ef-256",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "1",
+    "upload_time": 514.320834281003,
+    "total_upload_time": 514.3208749580008,
+    "p95_time": 0.009568898950965377,
+    "rps": 160.1949917532948,
+    "parallel": 1,
+    "p99_time": 0.010796515265101336,
+    "mean_time": 0.006136548502134247,
+    "mean_precisions": 0.9252290000000001,
+    "engine_params": {
+      "batch_size": 1024,
+      "vectorIndexConfig": {
+        "efConstruction": 256,
+        "maxConnections": 32
+      },
+      "ef": 512
+    }
+  },
+  {
+    "engine_name": "weaviate",
+    "setup_name": "weaviate-m-32-ef-512",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "0",
+    "upload_time": 933.3762714730037,
+    "total_upload_time": 933.3763043319996,
+    "p95_time": 0.004013835798832588,
+    "rps": 348.1009707664644,
+    "parallel": 1,
+    "p99_time": 0.0046323478328849895,
+    "mean_time": 0.0027915315874430234,
+    "mean_precisions": 0.7725380000000001,
+    "engine_params": {
+      "batch_size": 1024,
+      "vectorIndexConfig": {
+        "efConstruction": 512,
+        "maxConnections": 32
+      },
+      "ef": 64
+    }
+  },
+  {
+    "engine_name": "weaviate",
+    "setup_name": "weaviate-m-32-ef-512",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "1",
+    "upload_time": 933.3762714730037,
+    "total_upload_time": 933.3763043319996,
+    "p95_time": 0.00990734010010783,
+    "rps": 154.98344220437932,
+    "parallel": 1,
+    "p99_time": 0.011122649424432895,
+    "mean_time": 0.006341769843927613,
+    "mean_precisions": 0.933019,
+    "engine_params": {
+      "batch_size": 1024,
+      "vectorIndexConfig": {
+        "efConstruction": 512,
+        "maxConnections": 32
+      },
+      "ef": 512
+    }
+  },
+  {
+    "engine_name": "weaviate",
+    "setup_name": "weaviate-m-64-ef-256",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "0",
+    "upload_time": 635.8062502399989,
+    "total_upload_time": 635.8062955610003,
+    "p95_time": 0.00473946399797569,
+    "rps": 316.654972247056,
+    "parallel": 1,
+    "p99_time": 0.005282410570725915,
+    "mean_time": 0.00307184072011587,
+    "mean_precisions": 0.811201,
+    "engine_params": {
+      "batch_size": 1024,
+      "vectorIndexConfig": {
+        "efConstruction": 256,
+        "maxConnections": 64
+      },
+      "ef": 64
+    }
+  },
+  {
+    "engine_name": "weaviate",
+    "setup_name": "weaviate-m-64-ef-256",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "1",
+    "upload_time": 635.8062502399989,
+    "total_upload_time": 635.8062955610003,
+    "p95_time": 0.012224692956078791,
+    "rps": 130.55952971839753,
+    "parallel": 1,
+    "p99_time": 0.014568048047367483,
+    "mean_time": 0.007549148461567529,
+    "mean_precisions": 0.952566,
+    "engine_params": {
+      "batch_size": 1024,
+      "vectorIndexConfig": {
+        "efConstruction": 256,
+        "maxConnections": 64
+      },
+      "ef": 512
+    }
+  },
+  {
+    "engine_name": "weaviate",
+    "setup_name": "weaviate-m-64-ef-512",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "0",
+    "upload_time": 1349.7649877160002,
+    "total_upload_time": 1349.7650205850005,
+    "p95_time": 0.005248668901185737,
+    "rps": 286.12126786749525,
+    "parallel": 1,
+    "p99_time": 0.005835294068383519,
+    "mean_time": 0.003408242746329779,
+    "mean_precisions": 0.8299200000000001,
+    "engine_params": {
+      "batch_size": 1024,
+      "vectorIndexConfig": {
+        "efConstruction": 512,
+        "maxConnections": 64
+      },
+      "ef": 64
+    }
+  },
+  {
+    "engine_name": "weaviate",
+    "setup_name": "weaviate-m-64-ef-512",
+    "dataset_name": "glove-100-angular",
+    "search_idx": "1",
+    "upload_time": 1349.7649877160002,
+    "total_upload_time": 1349.7650205850005,
+    "p95_time": 0.01404075595564791,
+    "rps": 115.08683927572095,
+    "parallel": 1,
+    "p99_time": 0.0166983394890849,
+    "mean_time": 0.008579795552051656,
+    "mean_precisions": 0.9674590000000001,
+    "engine_params": {
+      "batch_size": 1024,
+      "vectorIndexConfig": {
+        "efConstruction": 512,
+        "maxConnections": 64
+      },
+      "ef": 512
+    }
+  }
+]

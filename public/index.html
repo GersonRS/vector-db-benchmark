@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui">
+  <title>Single node benchmarks - Qdrant</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="./files/style.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="
+  https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js
+  "></script>
+  <script src="./files/script.js"></script>
+</head>
+
+<body class="">
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <article class="container">
+            <section>
+              <div class="container" id="benchmark-plot-wrapper-1">
+                <div class="row mb-2 small">
+                  <div class="col-3"><label for="datasets-selector-1" class="mb-1">Dataset:</label>
+                    <select class="form-select form-select-sm" name="datasets" id="datasets-selector-1"
+                      onchange="renderSelected(&quot;1&quot;)">
+                      <option></option>
+                    </select>
+                  </div>
+                  <div class="col-3"><label for="parallel-selector-1" class="mb-1">Search threads:</label>
+                    <select class="form-select form-select-sm" value="1" disabled="" name="parallel"
+                      id="parallel-selector-1" onchange="renderSelected(&quot;1&quot;)">
+                      <option value="1">1</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-lg-6"><label class="mb-2">Plot values:</label>
+                    <div class="benchmark__plot-labels benchmark__plot-labels_stretch">
+                      <label class="benchmark__plot-label"><input type="radio" name="plot-value-1" value="rps"
+                          onclick="document.getElementById(&quot;parallel-selector-1&quot;).value=1,renderSelected(&quot;1&quot;,this.value)">
+                        RPS
+                      </label>
+                      <label class="benchmark__plot-label"><input type="radio" name="plot-value-1" value="mean_time"
+                          onclick="document.getElementById(&quot;parallel-selector-1&quot;).value=1,renderSelected(&quot;1&quot;,this.value)">
+                        Latency
+                      </label>
+                      <label class="benchmark__plot-label"><input type="radio" name="plot-value-1" value="p95_time"
+                          onclick="document.getElementById(&quot;parallel-selector-1&quot;).value=1,renderSelected(&quot;1&quot;,this.value)">
+                        p95 latency
+                      </label>
+                      <label class="benchmark__plot-label"><input type="radio" name="plot-value-1"
+                          value="total_upload_time"
+                          onclick="document.getElementById(&quot;parallel-selector-1&quot;).value=1,renderSelected(&quot;1&quot;,this.value)">
+                        Index time
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <canvas id="chart-1" width="1102" height="551"
+                  style="display: block; box-sizing: border-box; height: 551px; width: 1102px;">
+                </canvas>
+                <div class="form-group" style="margin-left:5%;margin-right:1%"><input type="range"
+                    class="custom-range form-range" id="precision-selector-1"
+                    onchange="updateLine(&quot;1&quot;,this.value)" min="0.65" max="1" step="0.0034999999999999996">
+                </div>
+                <div id="table-1" class="table-responsive table-responsive-md">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">Engine</th>
+                        <th scope="col">Setup</th>
+                        <th scope="col">Dataset</th>
+                        <th scope="col">Upload Time(m)</th>
+                        <th scope="col">Upload + Index Time(m)</th>
+                        <th scope="col">Latency(ms)</th>
+                        <th scope="col">P95(ms)</th>
+                        <th scope="col">P99(ms)</th>
+                        <th scope="col">RPS</th>
+                        <th scope="col">Precision</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>qdrant</td>
+                        <td title="{&quot;hnsw_ef&quot;:128}"><u>qdrant-rps-m-64-ef-256</u></td>
+                        <td>glove-100-angular</td>
+                        <td>0.58</td>
+                        <td>9.52</td>
+                        <td>47.56</td>
+                        <td>52.84</td>
+                        <td>56.31</td>
+                        <th scope="row">1999.66</th>
+                        <td>0.84</td>
+                      </tr>
+                      <tr>
+                        <td>milvus</td>
+                        <td title="{&quot;index_params&quot;:{&quot;efConstruction&quot;:128,&quot;M&quot;:32}}">
+                          <u>milvus-m-32-ef-128</u>
+                        </td>
+                        <td>glove-100-angular</td>
+                        <td>0.56</td>
+                        <td>3.70</td>
+                        <td>57.53</td>
+                        <td>90.018</td>
+                        <td>106.57</td>
+                        <th scope="row">1640.049</th>
+                        <td>0.84</td>
+                      </tr>
+                      <tr>
+                        <td>elasticsearch</td>
+                        <td title="{&quot;index_options&quot;:{&quot;m&quot;:32,&quot;ef_construction&quot;:512}}">
+                          <u>elasticsearch-m-32-ef-512</u>
+                        </td>
+                        <td>glove-100-angular</td>
+                        <td>10.11</td>
+                        <td>149.21</td>
+                        <td>75.31</td>
+                        <td>94.41</td>
+                        <td>119.74</td>
+                        <th scope="row">1276.20</th>
+                        <td>0.83</td>
+                      </tr>
+                      <tr>
+                        <td>weaviate</td>
+                        <td title="{&quot;ef&quot;:256}"><u>latest-weaviate-m32</u></td>
+                        <td>glove-100-angular</td>
+                        <td>13.94</td>
+                        <td>13.94</td>
+                        <td>93.58</td>
+                        <td>148.75</td>
+                        <td>195.22</td>
+                        <th scope="row">1052.65</th>
+                        <td>0.86</td>
+                      </tr>
+                      <tr>
+                        <td>redis</td>
+                        <td
+                          title="{&quot;ef&quot;:64,&quot;hnsw_config&quot;:{&quot;M&quot;:64,&quot;EF_CONSTRUCTION&quot;:512}}">
+                          <u>redis-m-64-ef-512</u>
+                        </td>
+                        <td>glove-100-angular</td>
+                        <td>133.77</td>
+                        <td>133.77</td>
+                        <td>125.60</td>
+                        <td>140.94</td>
+                        <td>147.62</td>
+                        <th scope="row">765.80</th>
+                        <td>0.82</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <script type="module">
+
+                let url = "./files/results.json";
+
+                let datasetSelector = document.getElementById("datasets-selector-1");
+
+                let parallelSelector = document.getElementById("parallel-selector-1");
+
+                let precisionSelector = document.getElementById("precision-selector-1");
+
+                let metricRadioSelector = document.getElementsByName("plot-value-1");
+
+                const config = {
+                  type: 'line',
+                  data: {
+                    datasets: []
+                  },
+                  options: {
+                    responsive: true,
+                    interaction: {
+                      intersect: false,
+                    },
+                    scales: {
+                      x: {
+                        type: 'linear',
+                        title: {
+                          display: true,
+                          text: 'Precision'
+                        },
+                      },
+                      y: {
+                        type: 'linear',
+                        title: {
+                          display: true,
+                          text: ''
+                        },
+                      }
+                    },
+                    plugins: {
+                      tooltip: {
+                        callbacks: {
+                          label: function (tooltipItem) {
+                            return [
+                              " - " + tooltipItem.parsed.setup_name,
+                              JSON.stringify(tooltipItem.parsed.engine_params)
+                            ];
+                          },
+                          title: function (tooltipItem) {
+                            return "Precision: " + tooltipItem[0].parsed.x + ", y: " + tooltipItem[0].parsed.y;
+                          }
+                        }
+                      },
+                    }
+                  }
+                };
+
+                const chart = new Chart(
+                  document.getElementById('chart-1'),
+                  config
+                );
+
+                fetch(url)
+                  .then(res => res.json())
+                  .then(data => {
+                    const datasets = getDatasetsList(data);
+                    updataDropdown(datasetSelector, datasets);
+
+
+                    const parallels = getParallelOptions(data).reverse();
+
+                    updataDropdown(parallelSelector, parallels);
+
+                    let parallelsInt = parseInt(parallels[0]);
+
+                    for (const row in data) {
+                      for (const column in columnMultiplyFactor) {
+                        if (column in data[row]) {
+                          data[row][column] *= columnMultiplyFactor[column];
+                        }
+                      }
+                    }
+
+                    let selectedData = filterData(data, {
+                      "dataset_name": datasets[0],
+                      "parallel": parallelsInt
+                    });
+
+                    window.datasets = { "1": data, ...window.datasets }
+                    window.charts = { "1": chart, ...window.charts }
+
+                    let plotValueRadioBtns = document.getElementsByName("plot-value-1");
+                    plotValueRadioBtns.forEach(btn => {
+                      if (btn.value === 'rps') {
+                        btn.checked = true;
+                      }
+                    });
+                    renderSelected("1");
+                  });
+              </script>
+            </section>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

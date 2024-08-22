@@ -1,0 +1,73 @@
+.benchmark__post-wrapper {
+  width: 100%;
+  max-width: 100% !important;
+  padding-bottom: 0
+}
+
+.benchmark__plot-wrapper {
+  margin-bottom: 2rem
+}
+
+.benchmark__plot-labels {
+  display: flex;
+  border-left: 1px solid #b4bacc;
+  border-right: 1px solid #b4bacc
+}
+
+@media(min-width:992px) {
+  .benchmark__plot-labels {
+    border-left: 0;
+    border-right: 0
+  }
+}
+
+.benchmark__plot-labels_stretch {
+  justify-content: space-between
+}
+
+.benchmark__plot-labels_stretch .benchmark__plot-label {
+  flex-grow: 1
+}
+
+.benchmark__plot-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 1rem
+}
+
+.benchmark__plot-label:first-of-type {
+  padding-left: 1rem
+}
+
+.benchmark__plot-label:not(:last-of-type) {
+  margin-right: 1rem;
+  border-right: 1px solid #b4bacc
+}
+
+@media(min-width:992px) {
+  .benchmark__plot-label {
+    flex-direction: row
+  }
+
+  .benchmark__plot-label:first-of-type {
+    padding-left: 0
+  }
+
+  .benchmark__plot-label:not(:last-of-type) {
+    margin-right: 1rem
+  }
+
+  .benchmark__plot-label input {
+    margin-right: .5rem
+  }
+}
+
+.benchmark .table-striped th,
+.benchmark .table-striped td {
+  font-size: .875rem
+}
+
+.benchmark .breadcrumbs {
+  margin-left: 0
+}

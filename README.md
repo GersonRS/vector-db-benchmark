@@ -1,9 +1,5 @@
 # vector-db-benchmark
 
-![Screenshot from 2022-08-23 14-10-01](https://user-images.githubusercontent.com/1935623/186516524-a61098d4-bca6-4aeb-acbe-d969cf30674e.png)
-
-> [View results](https://qdrant.tech/benchmarks/)
-
 There are various vector search engines available, and each of them may offer
 a different set of features and efficiency. But how do we measure the
 performance? There is no clear definition and in a specific case you
